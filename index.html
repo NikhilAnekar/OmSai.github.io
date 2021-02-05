@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -64,65 +64,93 @@
         <link rel="stylesheet" href="stylesheet.css">
         <title>Rklasdjklasdjklsajdklsajd</title>
     </head>-->
-    
+
 
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav" style="background-color: black">
         <div class="container">
-            <a class="navbar-brand js-scroll" href="#home" style="color: darkorange">ओमसाईचा लंबोदर</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span>B</span>
-                <span>A</span>
-                <span>C</span>
-            </button>
-            <div id="getting-started"></div>
+            <a class="navbar-brand js-scroll" href="#home">ओमसाईचा लंबोदर</a>
+            <!--<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>-->
+
+
+
             <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <!--Countdown start-->
+                <!--<h1>Aagman Sohla</h1>-->
+
+                <div id="clockdiv" class="mx-auto">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+                <!--Countdown end-->
+                <!--Menu Bar start-->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll active" href="#home"><i class="fa fa-fw fa-home"></i></a>
+                        <a class="nav-link js-scroll active" href="#home"><i class="fa fa-fw fa-home" style="color: darkorange"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#about">आमचे मंडळ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#service">कार्यक्रम</a>
+                        <a class="nav-link js-scroll" href="#program">कार्यक्रम</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#work">फोटो</a>
+                        <a class="nav-link js-scroll" href="#photo">फोटो</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#blog">मीडिया</a>
+                        <a class="nav-link js-scroll" href="#media">मीडिया</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#contact">संपर्क</a>
                     </li>
                 </ul>
+                <!--Menu Bar End-->
             </div>
         </div>
     </nav>
+
     <!--Carousal Start for Slide show-->
-    <div id="home">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/Ganapati_2017.jpg" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०17">
+    <section id="home">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/Ganapati_2017.jpg" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०17">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/c2.jpg" width="50%" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०18">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Ganpati_2019.jpg" width="100%" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०19">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="images/c2.jpg" width="50%" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०18">
-            </div>
-            <div class="carousel-item">
-                <img src="images/Ganpati_2019.jpg" width="100%" class="d-block w-100" alt="ओमसाई माघी गणेशोत्सव २०19">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-    </div>
+    </section>
     <br>
     <br>
     <!--Slide show End-->
@@ -133,7 +161,7 @@
             <div class="row">
                 <div class="about-me pt-10 pt-md-0">
                     <div class="title-box-2">
-                        <h5 class="title-left" style="font-style:italic"> 
+                        <h5 class="title-left" style="font-style:italic">
                             आमचे मंडळ
                         </h5>
                     </div>
@@ -147,7 +175,7 @@
     <!--AboutUS End-->
 
     <!--Karyakram start-->
-    <section id="about" class="about-mf sect-pt4 route">
+    <section id="program" class="about-mf sect-pt4 route">
         <div class="container">
             <div class="row">
                 <div class="about-me pt-10 pt-md-0">
@@ -160,9 +188,73 @@
                 <div class="col-md-4">
                     <div class="thumbnail">
                         <a href="images/oldprogram2018.jpeg" target="_blank">
-                            <img src="images/oldprogram2018.jpeg" alt="Lights" style="width:100%">
+                            <img src="images/oldprogram2018.jpeg" alt="Lights" style="width:40%">
                         </a>
                     </div>
+                </div>
+                <h2>कार्यक्रमाचि रूपरेषा</h2>
+                <p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
+                <p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
+
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>दिवस आणि तारीख</th>
+                            <th>वेळ</th>
+                            <th>कार्यक्रम</th>
+                                <!--<th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>-->
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                            <!--<td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>-->
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <!--<td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>-->
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <!--<td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>-->
+                        </tr>
+                    </table>
                 </div>
 
 
@@ -171,14 +263,36 @@
     </section>
     <!--Karyakram End-->
 
+    <section id="photo" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="about-me pt-10 pt-md-0">
+                    <div class="title-box-2">
+                        <h5 class="title-left" style="font-style:italic">
+                            गणपतीचा फोटो
+                        </h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="images/Ganapati_2017.jpg" target="_blank">
+                                <img src="images/Ganapati_2017.jpg" alt="Lights">
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--/ Media Start /-->
-    <section id="blog" class="blog-mf sect-pt4 route">
+    <section id="media" class="blog-mf sect-pt4 route">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box text-left">
                         <h3 class="title-a">
-                            मीडिया
+                            मीडिया - Show instagram feeds here
                         </h3>
                         <p class="subtitle-a">
                             आमचे बाप्पाचे फोटो आणि व्हिडिओ ... लाईक, शेअर आणि सबस्क्राईब करा
@@ -190,17 +304,16 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card card-blog">
-                        <div class="card-img" style="width: 360px; height: 315px">
+                        <div class="card-img">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/I_9pDXldt9M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" style="padding-left: 10px">
+                <div class="col-md-4 " style="padding-left:  220px">
                     <div class="card card-blog">
                         <div class="card-img">
-                            <div class="card-img" style="width: 360px; height: 315px">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cxq9RSy6B6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Cxq9RSy6B6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                         </div>
                     </div>
                 </div>
@@ -209,18 +322,18 @@
     </section>
     <!--/ Media End /-->
     <br> <br>
-       <!--Google Map Start-->
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div style="width: 100%">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.294242088963!2d72.83683891426817!3d19.226004052237812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b16405ada887%3A0x50074532543ddec6!2sOm%20Sai%20Maghi%20Ganeshotsav%20Mandal!5e0!3m2!1sen!2sin!4v1612125562754!5m2!1sen!2sin" width="800" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
+    <!--Google Map Start-->
+    <div class="footer-content pt-5 pb-5">
+        <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+                <div style="width: 100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.294242088963!2d72.83683891426817!3d19.226004052237812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b16405ada887%3A0x50074532543ddec6!2sOm%20Sai%20Maghi%20Ganeshotsav%20Mandal!5e0!3m2!1sen!2sin!4v1612125562754!5m2!1sen!2sin" width="800" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-            <br><br>
-            <!--Google Map End-->
+        </div>
+    </div>
+    <br><br>
+    <!--Google Map End-->
     <!--Start of footer-->
     <footer id="contact" class="footer-section">
         <div class="container">
@@ -253,7 +366,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <!--<div class="footer-logo">
                                 <a href="index.html"><img src="images/mg1.jpg" class="img-fluid" alt="logo"></a>
@@ -263,17 +376,17 @@
                             </div>-->
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>                  
+                                <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <br><br>
-           </div>
+        </div>
 
         <div class="copyright-area">
             <div class="container">
@@ -304,21 +417,15 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript">
-  $("#getting-started")
-  .countdown("2017/01/01", function(event) {
-    $(this).text(
-      event.strftime('%D days %H:%M:%S')
-    );
-  });
-</script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-</body>
-
-</html>
+</body></html>
